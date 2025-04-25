@@ -20,7 +20,6 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    transition: right 0.2s ease-in-out;
     z-index: 10000;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
