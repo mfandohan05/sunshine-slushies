@@ -1,3 +1,6 @@
+html, body {
+    overflow-x: hidden;
+}
 body {
     background-color: #FFF9D9!important;
     font-family: 'Lato', sans-serif!important;
@@ -17,21 +20,19 @@ nav {
     justify-content: flex-end;
     width: 100%;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: 0;
+    right: -100%;
+    transition: right 0.2s ease-in-out;
     z-index: 10000;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
     padding: 1rem;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+
 }
 .full-size-nav {
     display: none;
 }
 .slideout-menu.active {
-    transform: translateX(0);
+    right: 0;
 }
 .close-button {
     margin-right: -12px;
@@ -59,7 +60,6 @@ nav {
 .hero-text {
     grid-area: 1 / 1;
     z-index: 9999;
-    text-align: center;
 }
 .hero-text > h1 {
     color: white;
@@ -69,8 +69,10 @@ nav {
     padding: 1rem;
 }
 .see-menu {
+    display: flex;
     color: #CE0311;
     background-color: #FFE600;
+    justify-self: center;
     padding: 0.5rem 1.75rem;
     border-radius: 10px;
     transition: background-color 0.2s ease;
@@ -137,6 +139,7 @@ nav {
 }
 .no-min-width {
     min-width: 0!important;
+    height: 350px!important;
 }
 footer {
     background-color: #E30613;
@@ -215,10 +218,13 @@ footer {
     .grid-block {
         margin: 1rem;
     }
+    .contact-section, .alt-contact {
+        max-width: 750px;
+    }
 }
 @media (min-width: 1024px) {
     .hero-img {
-        height: 75vh;
+        height: 100vh;
     }
     .treats-section {
         width: 80%;
@@ -227,6 +233,9 @@ footer {
     .main-content {
         width: 80%;
         margin: 0 auto;
+    }
+    .contact-section, .alt-contact {
+        max-width: 850px;
     }
 }
 .menu-container {
@@ -253,4 +262,41 @@ footer {
 }
 .menu-small-text {
     font-size: 16px;
+}
+.contact-section {
+    width: 100%;
+    padding: 2rem 0 1rem;
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact-form {
+    width: 90%;
+    padding: 1rem;
+    overflow: visible;
+    margin: 0 auto;
+}
+.contact-form iframe {
+    width: 100%;
+    border: none;
+    display: block;
+}
+.alt-contact {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 2rem auto 3rem;
+    text-align: center;
+}
+.alt-contact a {
+    color: #E30613;
+    text-decoration: none;
+    font-weight: 700;
+}
+.alt-contact a:hover, .alt-contact a:focus {
+    text-decoration: underline;
+}
+html, body {
+    overflow-y: auto !important;
 }
