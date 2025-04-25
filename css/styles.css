@@ -1,3 +1,6 @@
+html, body {
+    overflow-x: hidden!important;
+    overflow-y: auto;
 body {
     background-color: #FFF9D9!important;
     font-family: 'Lato', sans-serif!important;
