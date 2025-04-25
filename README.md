@@ -1,21 +1,53 @@
-# sunshine-slushies
-Repository containing sunshine slushies project
-🌞 Sunshine Slushies Website
-This is a responsive, mobile-first website built for Sunshine Slushies, a local food truck business serving frozen treats, lemonade, and more.
+Project Overview
 
-🔧 My Role
-I served as the Lead Developer and UX/UI Designer on this project. My responsibilities included:
+The Sunshine Slushies website is a fully responsive, mobile-first promotional website built for a mobile food truck business specializing in slushies, lemonade, and other treats. The website was designed to be lively, easy to navigate, and visually aligned with the company's cheerful and vibrant branding. It includes a homepage, menu page, and contact page, along with a mobile slideout menu for improved usability on small screens.
 
-Architecture & Structure: I organized the overall HTML layout using semantic elements, ensuring accessibility and responsiveness from the ground up.
+My Role
 
-Mobile-First Design: I implemented a mobile-first approach using custom CSS and media queries to ensure the site is clean, intuitive, and functional on all devices.
+I served as the lead developer, designer, and team coordinator for this project. My responsibilities covered every stage of the site’s development, including:
 
-Styling & Animation: I handled all visual design, including typography, hover/focus interactions, brand colors, layout consistency, and CSS transitions for smoother UX.
+- Establishing the overall site architecture, design system, and coding standards.
 
-Slideout Navigation & Interactivity: I built the responsive hamburger menu with JavaScript for smaller screens and included keyboard and mouse interactions.
+- Fully designing and building the Homepage.
 
-Grid Layouts: I developed responsive grid structures for both the homepage and full menu to ensure clear, user-friendly content presentation.
+- Directing a team member through the creation of the Menu and Contact Page, providing guidance on structure, required classes, and basic responsive styling.
 
-Team Coordination: I directed a teammate on the initial class naming and layout structure for both the menu.html and contact.html pages, then refined and styled the content to match the site’s visual and UX standards.
+- Performing comprehensive code review and cleanup across the entire project to ensure consistency, accessibility, and clean code practices.
 
-This project was created as part of a UI design assignment, but I approached it with production-level care and attention to real-world usability.
+- Implementing a mobile-first, responsive design with Flexbox and Grid layouts.
+
+- Ensuring all media, including images and embeds, were properly responsive and optimized.
+
+- Handling accessibility considerations, including adding descriptive alt text, maintaining strong color contrast, and supporting keyboard navigation and focus states.
+
+- Integrating UI interactions such as slideout menus with JavaScript and hover/focus effects.
+
+- Testing and troubleshooting the site across multiple browsers (Chrome, Safari) and devices (desktop, iPhone).
+
+- Hosting the final version of the site using GitHub Pages.
+
+Technical Highlights
+
+- Built with: HTML5, CSS3, Bootstrap 5, vanilla JavaScript
+
+- Responsive Design: Mobile-first development with custom media queries.
+
+- UI/UX Design: Bright, cheerful color scheme (#E30613, #FFE600, #FFF9D9), consistent branding, intuitive navigation.
+
+- Accessibility: Focus states added, WCAG AA color contrast compliance, all images properly labeled with alt attributes.
+
+- Performance: Images optimized with lazy loading attributes (loading="lazy"), CSS transitions kept lightweight.
+
+- Clean Code: Semantic HTML elements, consistent class naming conventions, no repeated media queries.
+
+Challenges & Solutions
+
+Safari Browser Bugs: Noticed discrepancies in how Safari handled flexbox and element sizing compared to Chrome. Fixed this by adjusting CSS rules, adding specific Safari-friendly properties like -webkit-overflow-scrolling: touch and normalizing button dimensions with flex properties.
+
+Team Code Consistency: Had to identify and merge duplicated media queries and unify different teammates' contributions into a single cohesive style guide.
+
+Slideout Menu Issues: Initial overflow issues were addressed by refining overflow-x: hidden behavior and ensuring the slideout menu used transform for off-screen movement instead of manipulating right properties alone.
+
+Reflection
+
+This project pushed me to hone both my technical skills and my leadership abilities. I had to not only build out high-quality, production-ready pages but also organize, clean up, and guide a team effort to match a high professional standard. I’m proud of how the site turned out and how clearly it reflects a cohesive brand image, excellent responsiveness, and strong attention to usability.
